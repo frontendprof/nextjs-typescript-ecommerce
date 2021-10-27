@@ -18,7 +18,7 @@ export default function Home({ products }: InferGetStaticPropsType<typeof getSta
       <div>Hello</div>
       <div>World</div>
       <div>Message Again</div>
-      {products}
+      <div>{JSON.stringify(products)}</div>
     </>
   );
 }
