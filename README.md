@@ -11,3 +11,5 @@
 3. Infering get static props
 4. Get all products separation
 5. Fetch api function
+6. Integrating custom API server
+7. Fetching product query
