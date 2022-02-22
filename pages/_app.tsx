@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps & { Component: { Layout: FC } 
   const Layout = Component.Layout ?? Noop;
   return (
     <Layout>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </Layout>
   );
 }
