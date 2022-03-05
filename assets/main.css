@@ -1,5 +1,4 @@
-
-@import "./base.css";
+@import './base.css';
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +6,6 @@
 
 @layer components {
   .fit {
-    min-height: calc(100vh - 88px)
+    min-height: calc(100vh - 88px);
   }
 }
