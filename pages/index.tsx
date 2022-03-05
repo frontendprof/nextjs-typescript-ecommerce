@@ -38,7 +38,7 @@ export default function Home({ products }: InferGetStaticPropsType<typeof getSta
       />
       <Marquee>
         {products.slice(0, 3).map((product) => (
-          <ProductCard key={product.id} product={product} />
+          <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
     </>

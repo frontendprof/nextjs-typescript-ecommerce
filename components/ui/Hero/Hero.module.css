@@ -1,12 +1,15 @@
 .root {
-  @apply flex flex-col py-32 justify-center;
+  @apply flex py-32 justify-center;
   @screen md {
     @apply flex-row;
   }
 }
 
 .headline {
-  @apply text-4xl max-w-xl leading-10 font-extrabold text-white sm:text-5xl sm:leading-none sm:tracking-tight lg:text-lg;
+  @apply flex-1 text-4xl max-w-xl leading-10 font-extrabold text-white sm:text-5xl sm:leading-none sm:tracking-tight lg:text-lg;
+}
+.wrap {
+  @apply flex-1 max-w-4xl;
 }
 
 .description {

@@ -58,3 +58,10 @@
   @apply bg-primary pb-4 pt-2 px-6 font-semibold text-sm;
   letter-spacing: 0.5px;
 }
+
+.slim {
+  @apply flex justify-center items-center inset-0 absolute z-20;
+  & span {
+    @apply bg-black text-white p-3 font-bold text-xl;
+  }
+}
