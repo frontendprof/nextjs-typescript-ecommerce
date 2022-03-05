@@ -4,7 +4,7 @@ import getAllProducts from '@framework/product/get-all-products';
 import { getConfig } from '@framework/api/config';
 import { Layout } from '@components/common';
 import { ProductCard } from '@components/product';
-import { Grid, Hero } from '@components/ui';
+import { Grid, Hero, Marquee } from '@components/ui';
 
 export async function getStaticProps() {
   const config = getConfig();
@@ -26,7 +26,7 @@ export default function Home({ products }: InferGetStaticPropsType<typeof getSta
         ))}
       </Grid>
       <Hero
-        headline="Best Apparel Market available"
+        headline="Best Apparel Store in the market"
         description="Sweet soufflé cotton candy liquorice marshmallow. 
         Chocolate bar tootsie roll bonbon oat cake ice cream cake dessert. 
         Muffin ice cream topping carrot cake tiramisu gummies chocolate bar cheesecake. 
@@ -36,6 +36,11 @@ export default function Home({ products }: InferGetStaticPropsType<typeof getSta
         Fruitcake lemon drops jelly beans bonbon tart powder tootsie roll. 
         Toffee sweet lollipop danish oat cake."
       />
+      <Marquee>
+        {products.slice(0, 3).map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </Marquee>
     </>
   );
 }
